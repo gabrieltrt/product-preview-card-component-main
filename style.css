@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --primary-color: #6C7289;
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif; /* Not part of my css default reset */
+    background: #F2EAE2; /* Not part of my css default reset */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    
+    input, button, textarea, select {
+      font: inherit;
+    }
+
+main {
+    max-width: 21.4375rem;
+    margin: 0 auto;
+}
+
+.img-box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content-box {
+    background: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 1.5rem;
+}
+
+.content-box .perfume-detail {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.75rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.content-box h1 {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.content-box p {
+    color: var(--primary-color);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    display: flex;
+    gap: 1.1875rem;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    line-height: 1;
+}
+
+.price .price-highlighted {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: #3D8168;
+    font-weight: 700;
+}
+
+.price .full-price {
+    font-size: 0.8125rem;
+    text-decoration: line-through;
+    color: var(--primary-color);
+}
+
+.cart img {
+    display: inline-block;
+}
+
+.cart {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6875rem;
+    background: #3D8168;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: 18.4375rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+
+@media only screen and (min-width: 1023px) {
+    main {
+        display: flex;
+    }
+}
