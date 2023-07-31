@@ -118,7 +118,45 @@ main {
 
 @media only screen and (min-width: 1023px) {
     main {
+        max-width: 37.5rem;
         display: flex;
-        
     }
+
+
+    .img-box img {
+        border-top-right-radius: initial;
+        border-bottom-left-radius: 10px;
+        height: 100%;
+    }
+
+    .content-box {
+        border-bottom-left-radius: initial;
+        border-top-right-radius: 10px;
+        padding: 2rem 1.9688rem;
+        max-width: calc(100% / 2);
+    }
+
+    .content-box .perfume-detail {
+        margin-bottom: 1.25rem;
+    }
+
+    .content-box h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .content-box p {
+        margin-bottom: 1.8125rem;
+    }
+
+    .content-box .price {
+        margin-bottom: 1.875rem;
+    }
+
+    .cart {
+        max-width: 14.75rem;
+    }
+
+   
+
+
 }
