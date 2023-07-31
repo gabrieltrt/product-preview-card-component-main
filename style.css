@@ -119,5 +119,6 @@ main {
 @media only screen and (min-width: 1023px) {
     main {
         display: flex;
+        
     }
 }
